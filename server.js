@@ -9,7 +9,7 @@ const PORT = 3001;
 //since this comes before public/notes and public/index
 //this will probably get called instead of those other lines
 
-app.use(express.static(__dirname + 'public'));
+app.use(express.static('public'));
 
 // serve the html pages when the user requests them
 app.get('/public/notes', (req, res) => res.sendFile(path.join(__dirname,'/public/notes.html')));
