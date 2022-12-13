@@ -1,12 +1,12 @@
 const notes = require('express').Router();
 
 notes.get('/', (req, res) =>{
-    console.log('get notes/ route called');
+    res.json(JSON.stringify("notes/GET request"));
     //implement the notes get route
 });
 
 notes.post('/', (req, res) => {
-    console.log('post notes/ route called');
+    res.json(JSON.stringify("notes/POST request"));
     //implument the notes post route
 });
 
