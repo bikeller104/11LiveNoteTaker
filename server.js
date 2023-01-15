@@ -13,12 +13,12 @@ const PORT = 3001;
 
 
 //create a log of requests for debugging
-app.use((req, res, next) =>
-{ 
-    console.log(req.originalUrl);
-    console.log('---------------');
-    next(); 
-} );
+// app.use((req, res, next) =>
+// { 
+//     console.log(req.originalUrl);
+//     console.log('---------------');
+//     next(); 
+// } );
 
 app.use(express.static('public'));
 

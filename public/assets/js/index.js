@@ -1,3 +1,5 @@
+console.log("this script works");
+
 //this file is used by the frontend html files to handle user interaction
 let noteTitle;
 let noteText;
@@ -126,8 +128,11 @@ const handleRenderSaveBtn = () => {
 // Render the list of note titles
 const renderNoteList = async (notes) => {
   let jsonNotes = await notes.json();
+  console.log(jsonNotes);
   if (window.location.pathname === '/notes') {
-    noteList.forEach((el) => (el.innerHTML = ''));
+    noteList.forEach((el) => {
+      (el.innerHTML = jsonNotes)
+    });
   }
 
   let noteListItems = [];
