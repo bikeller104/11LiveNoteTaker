@@ -3,7 +3,7 @@ const path = require('path');
 const router = require('./routes');
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 
 //middleware to server static files from the public directory
