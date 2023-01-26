@@ -1,6 +1,3 @@
-console.log("this script works");
-
-//this file is used by the frontend html files to handle user interaction
 let noteTitle;
 let noteText;
 let saveNoteBtn;
@@ -28,7 +25,6 @@ const hide = (elem) => {
 // activeNote is used to keep track of the note in the textarea
 let activeNote = {};
 
-//this fuction gets the stored notes???
 const getNotes = () =>
   fetch('/api/notes', {
     method: 'GET',
@@ -37,8 +33,6 @@ const getNotes = () =>
     },
   });
 
-  //this function makes a call to the api/notes route and 
-  //passes in the note body
 const saveNote = (note) =>
   fetch('/api/notes', {
     method: 'POST',
@@ -48,9 +42,6 @@ const saveNote = (note) =>
     body: JSON.stringify(note),
   });
 
-  //this funciton makes a call to the api/notes/:id route 
-  //and intends to have the server detelet the note 
-  //corosponding to the id passed
 const deleteNote = (id) =>
   fetch(`/api/notes/${id}`, {
     method: 'DELETE',
@@ -128,11 +119,8 @@ const handleRenderSaveBtn = () => {
 // Render the list of note titles
 const renderNoteList = async (notes) => {
   let jsonNotes = await notes.json();
-  console.log(jsonNotes);
   if (window.location.pathname === '/notes') {
-    noteList.forEach((el) => {
-      (el.innerHTML = jsonNotes)
-    });
+    noteList.forEach((el) => (el.innerHTML = ''));
   }
 
   let noteListItems = [];

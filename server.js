@@ -25,12 +25,12 @@ app.use(express.static('public'));
 
 app.use(router);
 // serve the html pages when the user requests them
-app.get('/public/notes', (req, res) => res.sendFile(path.join(__dirname,'/public/notes.html')));
+app.get('/notes', (req, res) => res.sendFile(path.join(__dirname, "public", "notes.html")));
 
 
 //this is the catch all path so if the user inputs any path not caught by the other path handlers
 //it will by default serve up the index.html page.
-app.get('*', (req, res) => res.sendFile(path.join(__dirname,'/public/index.html')));
+//app.get('*', (req, res) => res.sendFile(path.join(__dirname,'/public/index.html')));
 
 
 //start the application

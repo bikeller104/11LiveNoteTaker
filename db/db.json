@@ -1,10 +1,12 @@
 [
     {
         "title":"Test Title",
-        "text":"Test text"
+        "text":"Test text",
+        "id":1
     },
     {
         "title":"Test Title 2",
-        "text":"This text should be the second saved note"
+        "text":"This text should be the second saved note",
+        "id":2
     }
 ]
