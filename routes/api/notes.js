@@ -19,11 +19,9 @@ notes.get('/', (req, res) =>{
 
 notes.post('/', (req, res) => {
     //implument the notes post route
-    console.log(req.json);
-    console.log(req.body);
-    let data = JSON.parse(req.body)
+    let data = /*JSON.parse(*/req.body/*)*/;
     console.log(data );
-    // fileUtil.readFromFileThenAppend(req.body,database);
+    fileUtil.readFromFileThenAppend(req.body,database);
     
     
     res.json(JSON.stringify("notes/POST request"));
