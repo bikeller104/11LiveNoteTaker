@@ -17,10 +17,10 @@
 This app will be live on heroku and allow users to create and save custom notes
 
 ## Visuals
-
+![Note Taker Webpage](./ProjectVisual.png)
 
 ## Installation Instructions
-go to <live deployment link> to access the application
+go to [Note Taker](https://deployed-11-note-taker.herokuapp.com/notes) to access the application
 
 ## Usage Instructions
 Open the webpage, click "get started", create a new note, and save it. then the note can be retrieved later
