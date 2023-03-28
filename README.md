@@ -14,7 +14,7 @@
 - [Contact & Questions](#contact--questions)
 
 ## Project Description
-This app will be live on heroku and allow users to create and save custom notes
+This app will is live on heroku and allow users to create and save custom notes
 
 ## Visuals
 ![Note Taker Webpage](./ProjectVisual.png)
